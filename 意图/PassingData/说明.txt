@@ -1,0 +1,1 @@
+本例子演示利用Intent在activity之间传递数据

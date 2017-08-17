@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.intents"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.intents.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.intents.MyBrowserActivity"
+            android:label="MyBrowserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <action android:name="com.example.intents.MyBrowserActivity"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <category android:name="com.example.intents.MyBrowserActivity"></category>
+                <data android:scheme="http"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

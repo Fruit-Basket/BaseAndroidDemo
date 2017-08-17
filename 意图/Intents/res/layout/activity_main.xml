@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    <Button 
+        android:id="@+id/buttonWebBrowser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="web browser"
+        android:onClick="onClickWebBrowser"/>
+    
+    <Button 
+        android:id="@+id/buttonMakeCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="make call "
+        android:onClick="onClickMakeCall"/>
+    
+    <Button 
+        android:id="@+id/buttonLaunchMyBrowser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="launch my browser"
+        android:onClick="onClickLaunchMyBrowser"/>
+</LinearLayout>
